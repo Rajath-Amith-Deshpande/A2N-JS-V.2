@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample Form Using Javascript</title>
+<link rel="stylesheet" type="text/css" href="Form.css">
+<link rel="shortcut icon" type="image/jfif" href="C:\Users\Rajath\OneDrive\Desktop\Rajath's Files\folder one of subject\images downloaded\Kali\Cool.jfif">
+<script>
+    function form(){
+        var NameRef = getElementById('fname')
+        console.log(NameRef.value)
+
+        var LnameRef = getElementById('lname')
+        console.log(LnameRef.value)
+
+        var phoneRef = getElementById('phno')
+        console.log(phone.value)
+
+        var mailRef = getElementById('email')
+        console.log(mailRef.value)
+
+        var Contact = getElementById('contact')
+        console.log(Contact.value)
+
+        var Address = getElementById('Address')
+        console.log(Address.value)
+
+        var Gender = getElementById('gender')
+        console.log(Gender.value)
+        
+        var age = getElementById('age')
+        console.log(age.value)
+        
+        var course = getElementById('course')
+        console.log(course.value)
+
+        var color = getElementById('color')
+        console.log(color.value)
+
+        var pRef = getElementById('p1')
+        console.log(pRef.value)
+
+        var date = getElementById('date')
+        console.log(date.value)
+        
+        var file = getElementById('file')
+        console.log(file.value)
+
+        var range = getElementById('range')
+        console.log(range.value)
+    }
+</script>
+</head>
+<body> 
+	<center>
+		<h1>Get in touch with us</h1>
+	</center>		
+		<center>
+			<form>
+			<b>	
+				<label>1) Enter Your Name:</label>
+  	<label for="fname">First Name: </label>
+ 	 <input type="text" id="fname" name="fname">	
+ 	 <br>
+  	<label for="lname" style="margin-left: 237px;">Last Name: </label>
+  	<input type="text" id="lname" name="lname">
+			<br>
+			<label>2) Enter Your Date Of Birth: </label>
+			<input type="date" placeholder="Enter Your Date of Birth" id="dob">
+			<br>
+			<label>3) Enter Your Phone Number:</label>
+			<input type="number" placeholder="Enter Your Number" - id="phno">
+			<br>
+			<label>4) Enter Your Email:</label>
+			<input type="email" placeholder="example@gmail.com" id="email">
+			<br>
+			<label>5) How would you like us to contact you?</label>
+			<select name="contact" - id="contact">
+				<option disabled="">Choose how to contact you</option>
+				<option>Through Email</option>
+				<option>Through Call</option>
+			</select>
+			<br>
+			<label>6) Enter Your Address:</label>
+			<input type="text" placeholder="Enter Your Address" id="Address">
+			<input type="text" placeholder="Enter Your City Name" id="Address">
+			<input type="number" placeholder="Enter Your Pin-code" id="Address">
+			<br>
+			<label>7) Enter Your Gender: </label>
+			<input type="radio" name="gender" id="gender">Male
+			<input type="radio" name="gender" id="gender">Female
+			<br>
+			<label>8) Enter Your Age:</label>
+			<input type="number" placeholder="13" id="age">
+			<br>
+			<hr>
+			<center><p style="font-size: 20px;">Shape Your Career With Us!</p></center>
+			<hr>
+			<label>9) Pick the Course You would want to Study In our College :-</label>
+			<br>
+	<input - class="options" id="course">Web Designing
+			<br>
+	<input - class="options" id="course">Big Data Analysis
+			<br>
+	<input - class="options" id="course">Big Data Engineering
+			<br>
+	<input - class="options" id="course">Software Development
+			<br>
+	<input - class="options" id="course">Master of Science in Data Science.
+			<br>
+	<input - class="options" id="course">PG Diploma in Machine Learning and AI.
+			<br>
+	<input - class="options" id="course">Web Development or Full Stack Developer
+			<br>
+	<input - class="options" id="course">VFX Training And Character Animation Degree
+			<br>
+	<input - class="options" id="course">Computer Hardware Engineering And Networking
+			<br>
+	<input - class="options" id="course">PG Certificate Program in Big Data & Analytics.
+			<br>
+	<input - class="options" id="course">Data AnalystPG Program in Big Data Engineering.
+			<br>
+	<input - class="options" id="course">Advanced Certification in Machine Learning and Cloud.
+			<br>
+	<input - class="options L" id="course">Executive Program in Blockchain Technology Management.
+			<br>
+	<label>10) Which color do you prefer to choose when you are learning with us?</label>
+	<input type="color" class="color" id="color">
+			<br>
+	<label>11) Create Your Own Login Password for the Webpage</label>
+	<input type="password" id="myInput">
+	<input - onclick="myFunction()" id="p1">Show Password
+<script>
+	function myFunction() {
+  	var x = document.getElementById("myInput");
+  	if (x.type === "password") {
+   		x.type = "text";
+  	} else {
+    	x.type = "password";
+  	}
+	}
+</script>
+<br>
+	<label>12) At What time and When will you start studying with us?</label>
+	<input type="datetime-local" id="date">
+			<br>
+	<label>13) Please choose a file and put it here 👇,so that we can anylize your capacity.</label>
+	<input type="file" class="file" placeholder="Choose A file" id="file">
+			<br>
+	<label>14) Please Select a range of Your hearing!</label>
+	<input type="range" id="range">100 is the MAXIMUM value
+			<br>
+    <button onclick="form()" class="submit" value="login">Submit</button>	
+    <input type="reset" value="RESET" class="reset">
+      		</form>
+      	</b>
+      	</center>	
+</body>
+</html>
